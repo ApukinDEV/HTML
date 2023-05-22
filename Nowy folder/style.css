@@ -31,7 +31,7 @@ header{
     color:#E5DCC5;
     border-bottom:1vh solid #E5DCC5;
 }
-.twooption{
+.twooption, .fouroption{
     border-radius: 50px;
     box-shadow: 0px 2px 10px black ;
     border:1vh solid #E5DCC5;
@@ -44,6 +44,9 @@ header{
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: hidden;
+}
+.fouroption{
+    height:80vh;
 }
 .left{
     flex-wrap: wrap;
@@ -76,4 +79,40 @@ header{
 .right{
     width:50%;
     height:100%;
+}
+.one{
+    text-shadow: 0px 2px 8px #4C4C47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color:#2d2d2a;
+    width:50%;
+    height:50%;
+    background-color:#C14953;
+}
+.two{
+    text-shadow: 0px 2px 8px #4C4C47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color:#2d2d2a;
+    width:50%;
+    height:50%;
+    background-color:#848FA5;
+}
+.navigation{
+    margin-top:13vh;
+    height:50vh;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.button{
+    margin:0.9vw;
+    width:7vw;
+    height:7vw;
+    border:0.5vw solid #C14953;
+    background-color:#4C4C47;
 }
