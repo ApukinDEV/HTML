@@ -12,7 +12,8 @@
     <title>Document</title>
 </head>
 <body>
-    <header>Kurs Cascading Style Sheets (CSS)</header>
+    <a href='#top'><button id="scroll" title="gura">Top</button></a>
+    <header id='top'>Kurs Cascading Style Sheets (CSS)</header>
     <div class='navigation'>
         <a href='#anchoralign-items'><div class='button'>align-items</div></a>
         <a href='#anchorbackground-color'><div class='button'>background-color</div></a>
@@ -58,24 +59,28 @@
         <a href='#anchorword-spacing'><div class='button'>word-spacing</div></a>
         <a href='#anchorz-index'><div class='button'>z-index</div></a>
     </div>
-    <div id='anchorx' class='fouroption'>
+    <h1>align-items</h1>
+    <div id='anchoralign-items' class='fouroption'>
         <div class='left'>
-            <div class='one' onclick='reset("x")'>
-                Opcja:Pierwsza;
+            <div class='top'>Align-items pozwala ci ustawić elementy w kontenerze posiadającym styl display:flex</div>
+            <div class='one' onclick='reset("align-items")'>
+                align-items: initial;
             </div>
-            <div class='two' onclick='secondsetting("x")'>
-                Opcja:Druga;
+            <div class='two' onclick='secondsetting("align-items")'>
+                align-items: flex-end;
             </div>
-            <div class='two' onclick='thirdsetting("x")'>
-                Opcja:Trzecia;
+            <div class='two' onclick='thirdsetting("align-items")'>
+                align-items: flex-start;
             </div>
-            <div class='one' onclick='fourthsetting("x")'>
-                Opcja:Czwarta;
+            <div class='one' onclick='fourthsetting("align-items")'>
+                align-items: center;
             </div>
         </div>
         <div class='right'>
-            <div class='top'>Jak dziala x?</div>
-            <div id='x'></div>
+            <div id='align-items'>
+                <div class='tone'>fd</div>
+                <div class='ttwo'>ssd</div>
+            </div>
         </div>
     </div>
 </body>

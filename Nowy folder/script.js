@@ -25,3 +25,16 @@ function fourthsetting(id){
     x.classList.remove("fourth")
     x.classList.add("fourth")
 }
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    let mybutton = document.getElementById("scroll");
+    console.log("Hello world!")
+    console.log("koniki!")
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.classList.add("shown");
+    } else {
+      mybutton.classList.remove("shown")
+    }
+  }
