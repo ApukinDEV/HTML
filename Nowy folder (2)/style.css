@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#0E3B43;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.clicker{
+    text-align: center;
+    width:20vw;
+    height:20vw;
+    border-radius: 1vw;
+    background-color:#357266;
+    border:3px solid #A3BBAD;
+    transition: 1s;
+    transform: translateY(300px);
+}
+.clicker:hover{
+    transition: 0.5s;
+    width:21vw;
+    height:21vw;
+    border-radius: 1vw;
+    border-top:5vw solid #BDCEC4;
+    transform: translateY(0px);
+}
+img{
+    margin: auto;
+    height:100%;
+}
+#hud{
+    position:absolute;
+    top:25vw;
+    left:50%;
+    justify-content: space-around;
+    margin-left:-35vw;
+    width:70vw;
+    height:20vw;
+    display: flex;
+}
+#wynik{
+    width:20vw;
+    height:20vw;
+    position: absolute;
+    top:20vh;
+    left:50%;
+    margin-left:-10vw;
+    text-align: center;
+    line-height: 20vw;
+    font-size: 3vw;
+}
+#dolnalewo, #dolnaprawo,#gornalewo, #gornaprawo{
+    position: absolute;
+    width: 40vw;
+    transition: 2s;
+}
+#tekst{
+    position:absolute;
+    top:0;
+    margin-left:25vw;
+    width:100vh;
+    height: 10vw;
+}
+#dolnalewo{
+    transform:translateX(-600px);
+}
+#dolnaprawo{
+    right:0;
+    transform:translateX(600px) rotateY(180deg);
+}
+#gornalewo{
+    width: 30vw;
+    transform:translateX(-600px) translateY(-100px);
+}
+#gornaprawo{
+    width: 30vw;
+    right:0;
+    transform:translateX(600px) rotateY(180deg) translateY(-100px);
+}
+@keyframes left{
+    25%{
+        transform:translateY(-200px) rotate(-15deg);
+    }
+    33%{
+        transform:translateY(-100px) rotate(0deg);
+    }
+    58%{
+        transform:translateY(-200px) rotate(-15deg);
+    }
+    66%{
+        transform:translateY(-100px) rotate(0deg);
+    }
+    92%{
+        transform:translateY(-200px) rotate(-15deg);
+    }
+    100%{
+        transform:translateY(-100px) rotate(0deg);
+    }
+}
+@keyframes right{
+    25%{
+        transform:translateY(-200px) rotateY(180deg) rotate(-15deg);
+    }
+    33%{
+        transform:translateY(-100px) rotateY(180deg) rotate(0deg);
+    }
+    58%{
+        transform:translateY(-200px) rotateY(180deg) rotate(-15deg);
+    }
+    66%{
+        transform:translateY(-100px) rotateY(180deg) rotate(0deg);
+    }
+    92%{
+        transform:translateY(-200px) rotateY(180deg) rotate(-15deg);
+    }
+    100%{
+        transform:translateY(-100px) rotateY(180deg) rotate(0deg);
+    }
+}
